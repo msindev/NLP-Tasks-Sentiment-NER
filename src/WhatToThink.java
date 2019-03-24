@@ -4,7 +4,7 @@ public class WhatToThink
 {
 	public static void main(String[] args) 
 	{
-		String topic = "Narendra Modi";
+		String topic = "Happy Birthday";
 		int count = 0;
 		ArrayList<String> tweets = TweetManager.getTweets(topic);
 		System.out.println("tweets retrieved Done!!!");
