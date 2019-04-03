@@ -1,3 +1,5 @@
+package net.penguincoders;
+
 import java.util.Scanner;
 
 public class SimpleSentiment 

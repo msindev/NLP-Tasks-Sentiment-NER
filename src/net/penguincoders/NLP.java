@@ -1,3 +1,5 @@
+package net.penguincoders;
+
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -15,13 +17,13 @@ public class NLP
 		pipeline = new StanfordCoreNLP("MyPropFile.properties");
 	}
 
-	public static int findSentiment(String tweet) 
+	public static int findSentiment(String input) 
 	{
 		int mainSentiment = 0;
-		if (tweet != null && tweet.length() > 0)
+		if (input != null && input.length() > 0)
 		{
 			int longest = 0;
-			Annotation annotation = pipeline.process(tweet);
+			Annotation annotation = pipeline.process(input);
 			for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) 
 			{
 				Tree tree = sentence.get(SentimentAnnotatedTree.class);

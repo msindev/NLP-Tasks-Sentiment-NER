@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="/home/mohit/eclipse-workspace/NLP Tasks/lib/stanford-corenlp-3.9.2.jar"/>
 	<classpathentry kind="lib" path="/home/mohit/eclipse-workspace/NLP Tasks/lib/stanford-corenlp-3.9.2-models.jar"/>
 	<classpathentry kind="lib" path="/home/mohit/eclipse-workspace/NLP Tasks/lib/twitter4j-core-4.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/jfxrt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
