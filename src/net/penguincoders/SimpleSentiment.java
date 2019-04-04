@@ -11,5 +11,6 @@ public class SimpleSentiment
 		String s = ob.nextLine();
 		NLP.init();
 		System.out.println("Sentiment Score: "+NLP.findSentiment(s));
+		ob.close();
 	}
 }

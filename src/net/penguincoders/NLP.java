@@ -14,7 +14,7 @@ public class NLP
 
 	public static void init() 
 	{
-		pipeline = new StanfordCoreNLP("MyPropFile.properties");
+		pipeline = new StanfordCoreNLP("net/penguincoders/MyPropFile.properties");
 	}
 
 	public static int findSentiment(String input) 

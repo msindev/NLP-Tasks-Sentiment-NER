@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/twitter4j-core-4.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/stanford-corenlp-3.9.2-models.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/stanford-corenlp-3.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ejml-0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfxrt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

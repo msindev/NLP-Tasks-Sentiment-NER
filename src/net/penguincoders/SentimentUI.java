@@ -15,6 +15,8 @@ public class SentimentUI extends Application
 	{
 		//Create the FXMLLoader
 		FXMLLoader loader = new FXMLLoader();
+		SentimentUIController controller = new SentimentUIController();
+		loader.setController(controller);
 		//Path to FXML File
 		String fxmlPath = "src/net/penguincoders/SentimentUI.fxml";
 		FileInputStream fxmlStream = new FileInputStream(fxmlPath);
