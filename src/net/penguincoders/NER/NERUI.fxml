@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="inputText" layoutX="63.0" layoutY="126.0" prefHeight="270.0" prefWidth="616.0" promptText="Enter Your text here" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <Label layoutX="63.0" layoutY="61.0" prefHeight="57.0" prefWidth="424.0" text="Enter Text For Keyword Extraction" textFill="#176fc3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="extractKeyword" layoutX="255.0" layoutY="454.0" mnemonicParsing="false" onAction="#printKeyword" prefHeight="48.0" prefWidth="232.0" text="Go" textFill="#0c74e4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,4 +1,4 @@
-package net.penguincoders;
+package net.penguincoders.Sentiment;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -7,10 +7,15 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import net.penguincoders.NLP;
 import javafx.fxml.Initializable;
 
 public class SentimentUIController implements Initializable
 {
+	static
+	{
+		NLP.initSentiment();
+	}
 	@FXML
 	public TextArea inputText;
 	@FXML
@@ -28,7 +33,6 @@ public class SentimentUIController implements Initializable
 	@FXML
 	public void printLabelOutput() 
 	{
-		NLP.init();
 		String input = inputText.getText();
 		String score = Integer.toString(NLP.findSentiment(input));
 		scoreLabel.setText("Sentiment Score: "+score);
@@ -37,6 +41,5 @@ public class SentimentUIController implements Initializable
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		
 	}
 }

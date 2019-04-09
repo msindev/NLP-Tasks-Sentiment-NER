@@ -1,4 +1,4 @@
-package net.penguincoders;
+package net.penguincoders.Sentiment;
 
 import java.io.FileInputStream;
 
@@ -18,7 +18,7 @@ public class SentimentUI extends Application
 		SentimentUIController controller = new SentimentUIController();
 		loader.setController(controller);
 		//Path to FXML File
-		String fxmlPath = "src/net/penguincoders/SentimentUI.fxml";
+		String fxmlPath = "src/net/penguincoders/Sentiment/SentimentUI.fxml";
 		FileInputStream fxmlStream = new FileInputStream(fxmlPath);
 		//Create the pane and load all details
 		Pane root = (Pane) loader.load(fxmlStream);

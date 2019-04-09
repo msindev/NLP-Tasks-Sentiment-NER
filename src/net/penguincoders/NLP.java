@@ -3,6 +3,8 @@ package net.penguincoders;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.CoreDocument;
+import edu.stanford.nlp.pipeline.CoreEntityMention;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations.SentimentAnnotatedTree;
 import edu.stanford.nlp.trees.Tree;
@@ -12,11 +14,15 @@ public class NLP
 {
 	static StanfordCoreNLP pipeline;
 
-	public static void init() 
+	public static void initSentiment() 
 	{
-		pipeline = new StanfordCoreNLP("net/penguincoders/MyPropFile.properties");
+		pipeline = new StanfordCoreNLP("net/penguincoders/Sentiment/Sentiment.properties");
 	}
 
+	public static void initNER()
+	{
+		pipeline = new StanfordCoreNLP("net/penguincoders/NER/NER.properties");
+	}
 	public static int findSentiment(String input) 
 	{
 		int mainSentiment = 0;
@@ -37,5 +43,17 @@ public class NLP
 			}
 		}
 		return mainSentiment;
+	}
+	
+	public static CoreDocument namedEntityRecognition(String input)
+	{
+		CoreDocument doc = new CoreDocument(input);
+		pipeline.annotate(doc);
+		for (CoreEntityMention em : doc.entityMentions())
+		{
+		      System.out.println("\t"+em.text()+"\t"+em.entityType()+"\t"+em.entityTypeConfidences());
+		}
+		
+		return doc;
 	}
 }

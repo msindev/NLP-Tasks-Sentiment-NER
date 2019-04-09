@@ -10,7 +10,7 @@ public class WhatToThink
 		int count = 0;
 		ArrayList<String> tweets = TweetManager.getTweets(topic);
 		System.out.println("tweets retrieved Done!!!");
-		NLP.init();
+		NLP.initSentiment();
 		System.out.println(" init Done!!!");
 		for(String tweet : tweets) 
 		{
