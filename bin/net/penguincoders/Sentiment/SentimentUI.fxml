@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.penguincoders.Sentiment.SentimentUIController">
+   <children>
+      <TextArea fx:id="inputText" layoutX="63.0" layoutY="126.0" prefHeight="270.0" prefWidth="616.0" promptText="Enter Your text here" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <Label layoutX="63.0" layoutY="61.0" prefHeight="57.0" prefWidth="424.0" text="Enter Text For Sentiment Analysis" textFill="#176fc3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="calculateScore" layoutX="50.0" layoutY="483.0" mnemonicParsing="false" onAction="#printLabelOutput" prefHeight="48.0" prefWidth="232.0" text="Calculate Score" textFill="#2419bc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="scoreLabel" layoutX="345.0" layoutY="483.0" prefHeight="48.0" prefWidth="403.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="632.0" layoutY="551.0" mnemonicParsing="false" onAction="#gotToPreviousScreen" prefHeight="25.0" prefWidth="109.0" text="Back" textFill="#1d44c3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.penguincoders.NER.NEROutputController">
+   <right>
+      <Pane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="253.0" layoutY="60.0" prefHeight="61.0" prefWidth="294.0" text="Extracted Keywords" textAlignment="CENTER" textFill="#187bb8">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="177.0" prefHeight="51.0" prefWidth="87.0" text="Person" textFill="#0da4d9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="177.0" prefHeight="51.0" prefWidth="161.0" text="Organization" textFill="#0da4d9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="615.0" layoutY="177.0" prefHeight="51.0" prefWidth="111.0" text="Location" textFill="#0da4d9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="230.0" layoutY="228.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="0.0" />
+            <Separator layoutX="547.0" layoutY="228.0" orientation="VERTICAL" prefHeight="240.0" prefWidth="0.0" />
+            <Label fx:id="personLabel" layoutX="48.0" layoutY="239.0" prefHeight="319.0" prefWidth="165.0" wrapText="true" />
+            <Label fx:id="organizationLabel" layoutX="287.0" layoutY="245.0" prefHeight="319.0" prefWidth="250.0" wrapText="true" />
+            <Label fx:id="locationLabel" layoutX="596.0" layoutY="245.0" prefHeight="319.0" prefWidth="186.0" wrapText="true" />
+            <Button fx:id="backButton" layoutX="367.0" layoutY="545.0" mnemonicParsing="false" onAction="#gotToPreviousScreen" prefHeight="35.0" prefWidth="100.0" text="Back">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>
