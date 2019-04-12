@@ -50,7 +50,7 @@ public class NERUIController implements Initializable
 				person += em.text()+"\n";
 			if(em.entityType().equalsIgnoreCase("ORGANIZATION"))
 				organization+=em.text()+"\n";
-			if(em.entityType().equalsIgnoreCase("LOCATION") || em.entityType().equalsIgnoreCase("COUNTRY"))
+			if(em.entityType().equalsIgnoreCase("LOCATION") || em.entityType().equalsIgnoreCase("COUNTRY") || em.entityType().equalsIgnoreCase("CITY"))
 				location+=em.text()+"\n";
 		}
 		neroc.setPersonLabel(person);
