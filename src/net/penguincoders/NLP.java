@@ -23,7 +23,7 @@ public class NLP
 	{
 		pipeline = new StanfordCoreNLP("net/penguincoders/NER/NER.properties");
 	}
-	public static int findSentiment(String input) 
+	public static String findSentiment(String input) 
 	{
 		int mainSentiment = 0;
 		if (input != null && input.length() > 0)
@@ -42,7 +42,8 @@ public class NLP
 				}
 			}
 		}
-		return mainSentiment;
+		String sentiment[] = {"Very Negative", "Negative", "Neutral", "Positive", "Very Positive"};
+		return sentiment[mainSentiment];
 	}
 	
 	public static CoreDocument namedEntityRecognition(String input)

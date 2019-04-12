@@ -10,7 +10,7 @@ public class SimpleNLP
 		System.out.println("Enter text for analysis: ");
 		String s = ob.nextLine();
 		NLP.initSentiment();
-		System.out.println("Sentiment Score: "+NLP.findSentiment(s));
+		System.out.println("Sentiment: "+NLP.findSentiment(s));
 		NLP.initNER();
 		NLP.namedEntityRecognition(s);
 		ob.close();

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.penguincoders.Sentiment.SentimentUIController">
    <children>
       <TextArea fx:id="inputText" layoutX="63.0" layoutY="126.0" prefHeight="270.0" prefWidth="616.0" promptText="Enter Your text here" wrapText="true">
          <font>
@@ -23,9 +23,14 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Label fx:id="scoreLabel" layoutX="400.0" layoutY="483.0" prefHeight="48.0" prefWidth="287.0">
+      <Label fx:id="scoreLabel" layoutX="345.0" layoutY="483.0" prefHeight="48.0" prefWidth="403.0">
          <font>
-            <Font size="24.0" />
+            <Font size="20.0" />
          </font></Label>
+      <Button layoutX="632.0" layoutY="551.0" mnemonicParsing="false" onAction="#gotToPreviousScreen" prefHeight="25.0" prefWidth="109.0" text="Back" textFill="#1d44c3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

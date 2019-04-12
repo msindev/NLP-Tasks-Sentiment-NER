@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -15,11 +16,12 @@ public class SentimentUI extends Application
 	{
 		//Create the FXMLLoader
 		FXMLLoader loader = new FXMLLoader();
-		SentimentUIController controller = new SentimentUIController();
-		loader.setController(controller);
+		//SentimentUIController controller = new SentimentUIController();
+		//loader.setController(controller);
 		//Path to FXML File
 		String fxmlPath = "src/net/penguincoders/Sentiment/SentimentUI.fxml";
 		FileInputStream fxmlStream = new FileInputStream(fxmlPath);
+		//Parent root = FXMLLoader.load(getClass().getResource("src/net/penguincoders/Sentiment/SentimentUI.fxml"));
 		//Create the pane and load all details
 		Pane root = (Pane) loader.load(fxmlStream);
 		//Create the scene
