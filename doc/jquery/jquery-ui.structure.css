@@ -14,9 +14,10 @@
 .ui-helper-hidden {
 	display: none;
 }
+
 .ui-helper-hidden-accessible {
 	border: 0;
-	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
@@ -24,6 +25,7 @@
 	position: absolute;
 	width: 1px;
 }
+
 .ui-helper-reset {
 	margin: 0;
 	padding: 0;
@@ -34,18 +36,21 @@
 	font-size: 100%;
 	list-style: none;
 }
-.ui-helper-clearfix:before,
-.ui-helper-clearfix:after {
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
 	content: "";
 	display: table;
 	border-collapse: collapse;
 }
+
 .ui-helper-clearfix:after {
 	clear: both;
 }
+
 .ui-helper-clearfix {
 	min-height: 0; /* support: IE7 */
 }
+
 .ui-helper-zfix {
 	width: 100%;
 	height: 100%;
@@ -53,20 +58,18 @@
 	left: 0;
 	position: absolute;
 	opacity: 0;
-	filter:Alpha(Opacity=0); /* support: IE8 */
+	filter: Alpha(Opacity = 0); /* support: IE8 */
 }
 
 .ui-front {
 	z-index: 100;
 }
 
-
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-disabled {
 	cursor: default !important;
 }
-
 
 /* Icons
 ----------------------------------*/
@@ -79,7 +82,6 @@
 	background-repeat: no-repeat;
 }
 
-
 /* Misc visuals
 ----------------------------------*/
 
@@ -91,12 +93,14 @@
 	width: 100%;
 	height: 100%;
 }
+
 .ui-autocomplete {
 	position: absolute;
 	top: 0;
 	left: 0;
 	cursor: default;
 }
+
 .ui-menu {
 	list-style: none;
 	padding: 0;
@@ -104,9 +108,11 @@
 	display: block;
 	outline: none;
 }
+
 .ui-menu .ui-menu {
 	position: absolute;
 }
+
 .ui-menu .ui-menu-item {
 	position: relative;
 	margin: 0;
@@ -114,8 +120,10 @@
 	cursor: pointer;
 	min-height: 0; /* support: IE7 */
 	/* support: IE10, see #8844 */
-	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+	list-style-image:
+		url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
+
 .ui-menu .ui-menu-divider {
 	margin: 5px 0;
 	height: 0;
@@ -123,8 +131,8 @@
 	line-height: 0;
 	border-width: 1px 0 0 0;
 }
-.ui-menu .ui-state-focus,
-.ui-menu .ui-state-active {
+
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active {
 	margin: -1px;
 }
 
@@ -132,6 +140,7 @@
 .ui-menu-icons {
 	position: relative;
 }
+
 .ui-menu-icons .ui-menu-item {
 	padding-left: 2em;
 }
