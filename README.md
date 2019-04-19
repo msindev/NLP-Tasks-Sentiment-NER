@@ -19,7 +19,14 @@ Sentiment Analysis - Run file named as SentimentUI.java present in /net/penguinc
 Named Entity Recognition - Run file named as NERUI.java present in /net/penguincoders/NER package.
 
 ## Screenshots
+### NLP Tasks Welcome Screen
 ![NLP Tasks Welcome Screen](https://github.com/mohitwildbeast/NLP-Tasks-Sentiment-NER/blob/master/images/NLP%20Taks%20Welcome%20Screen.png)
+
+### Sentiment Analysis
 ![Sentiment Analysis](https://github.com/mohitwildbeast/NLP-Tasks-Sentiment-NER/blob/master/images/Sentiment%20Analysis.png)
+
+### Keyword Extraction NER Text Input
 ![Keyword Extraction NER Text Input](https://github.com/mohitwildbeast/NLP-Tasks-Sentiment-NER/blob/master/images/Keyword%20Extraction%20NER%20Text%20Input.png)
+
+### Keyword Extraction NER Text Results
 ![Keyword Extraction NER Text Results](https://github.com/mohitwildbeast/NLP-Tasks-Sentiment-NER/blob/master/images/Keyword%20Extraction%20NER%20Text%20Results.png)
